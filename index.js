@@ -6,7 +6,7 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:prettier/recommended"
   ],
-  plugins: ["import", "prettier"],
+  plugins: ["import", "prettier", "react-hooks"],
   env: {
     browser: true,
     es6: true,
@@ -33,7 +33,14 @@ module.exports = {
     }
   },
   rules: {
-    "prettier/prettier": "error"
+    "prettier/prettier": ["error", {
+        "singleQuote": true,
+        "printWidth": 80,
+        "trailingComma": "all",
+        "jsxBracketSameLine": true
+    }],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   },
   globals: {}
 };
