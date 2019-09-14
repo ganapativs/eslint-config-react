@@ -5,7 +5,7 @@ Automagically add `ESLint` support to `react` setup by adding this package.
 ## Install
 
 ```sh
-yarn add @ganapativs/eslint-config-react --dev
+yarn add eslint @ganapativs/eslint-config-react --dev
 ```
 
 ## Enable ESLint
